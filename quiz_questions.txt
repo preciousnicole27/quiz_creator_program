@@ -35,3 +35,29 @@ B. Troposphere, Stratosphere, Mesosphere, Thermosphere, Exosphere
 C. Stratosphere, Troposphere, Thermosphere, Mesosphere, Exosphere
 D. Troposphere, Stratosphere, Mesosphere, Exosphere, Thermosphere
 Answer: B
+
+===MEDIUM===
+
+Question: Who is the 9th President of the Philippines?
+
+A. Sergio Osmena
+B. Ramon Magsaysay
+C. Diosdado Macapagal
+D. Corazon Aquino
+Answer: C
+
+Question: What is the formula for Velocity?
+
+A. Displacement / Time
+B. Time * Displacement
+C. Acceleration / Time
+D. Distance * Speed
+Answer: A
+
+Question: Which programming language is known for its direct syntax making it easier for beginners?
+
+A. C++
+B. Java
+C. R
+D. Python
+Answer: D
