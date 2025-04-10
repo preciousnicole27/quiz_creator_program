@@ -1,4 +1,37 @@
 # Questions that will be used in the main program
 # consists of different levels of difficulty
 # has choices A-D
-# has the answer key
+
+===EASY===
+
+Question: When did Jose Rizal die?
+
+A. June 19, 1896
+B. December 12, 1861
+C. June 30, 1899
+D. December 30, 1896
+Answer: D
+
+Question: What is the largest continent?
+
+A. Europe
+B. Asia
+C. South America
+D. Russia
+Answer: B
+
+Question: Who is the National Hero of the Philippines?
+
+A. Dr. Jose Rizal
+B. Pres. Bongbong Marcos
+C. Apolinario Mabini
+D. Bini Maloi
+Answer: A
+
+Question: Layers of the Atmosphere (lowest-highest)
+
+A. Stratosphere, Troposphere, Mesosphere, Thermosphere, Exosphere
+B. Troposphere, Stratosphere, Mesosphere, Thermosphere, Exosphere
+C. Stratosphere, Troposphere, Thermosphere, Mesosphere, Exosphere
+D. Troposphere, Stratosphere, Mesosphere, Exosphere, Thermosphere
+Answer: B
