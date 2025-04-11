@@ -75,8 +75,9 @@ def view_questions():
     if not questions:
         print(Fore.BLUE + "No questions found.")
         return
-
 # print each question number and text
+    for idx, q in enumerate(questions):
+        print(Fore.GREEN + f"[{idx}] {q['questions'][9:]}")
 # define the function that will allow user to remove questions
 def remove_question():
 # write the updated list after
