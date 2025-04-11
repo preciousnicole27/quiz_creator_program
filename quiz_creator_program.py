@@ -161,3 +161,5 @@ def main():
         else:
             print(Fore.RED + "Invalid input. Please try again.")
 
+if __name__ == "__main__":
+    main()
