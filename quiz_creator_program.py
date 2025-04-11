@@ -114,6 +114,13 @@ def start_quiz(questions, num_questions = 5):
 # shuffle/ randomize the questions
     random.shuffle(questions)
     score = 0
+    for i, q in enumerate(questions[:num_questions], start = 1):
+        print(f"\n Question {i}: {q['question'][9:]}")
+        print(q["A"])
+        print(q["B"])
+        print(q["C"])
+        print(q["D"])
+
 # ask for user input (answers)
 # print score with percentage
 # define the main menu function
