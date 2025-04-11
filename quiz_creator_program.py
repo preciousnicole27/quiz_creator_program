@@ -86,6 +86,25 @@ def remove_question():
         return
     view_questions()
 # write the updated list after
+    try:
+        idx = int(input("Enter the number of questions to remove:"))
+        if 0 <= idx < len(questions):
+            del questions[idx]
+            with open(filename, 'w') as file:
+                for q in questions[idx]:
+                    with open(filename, 'w') as file:
+                        file.write(f"{q['question']}\n")
+                        file.write(f"{q['A']}\n")
+                        file.write(f"{q['B']}\n")
+                        file.write(f"{q['C']}\n")
+                        file.write(f"{q['D']}\n")
+                        file.write(f"Answer: {q['answer']}\n\n")
+                print(Fore.GREEN + "Question removed successfully.")
+        else:
+            print(Fore.RED + "Invalid index.")
+    except ValueError:
+        print(Fore.RED + "Invalid input. Please enter a number.")
+
 # define the function that will allow user to take the quiz
 def start_quiz(questions, num_questions = 5):
 # shuffle/ randomize the questions
