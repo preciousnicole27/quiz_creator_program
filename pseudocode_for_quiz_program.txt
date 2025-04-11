@@ -1,0 +1,35 @@
+1. start program
+2. import os, colorama, and random
+3. define function that will add questions
+4. Prompt user to enter a question
+5. Save the question, choices, and correct answer to the file in a clear format
+6. Ask if the user wants to add another question
+7. Call check_file() to ensure the file exists
+8. Call quiz_program() to load questions from the txt file
+9. Load and shuffle the list of questions
+10. Display final score and percentage
+================================================================================
+# define the function quiz program that will open the file quiz_questions.txt
+# open the files and read lines then read the quiz file
+# create an empty list for the quiz_questions then store all the quiz_questions
+# create a dictionary that temporarily holds one question 
+# use loop
+# if line starts with the choices save 
+# if line starts with Answer get the text and save to the dictionary
+# print how many questions were loaded showing results
+# then return and set data back to main
+# define the function that will run the quiz
+# use shuffle to randomize the questions
+# set the score to 0
+# use loop through the questions
+# print the question 
+# print choices A to D repeat this 5x
+# ask for user input for their Answer
+# if correct print correct then add 1 to score
+# else print wrong then show the correct Answer
+# after the loop show final score and percentage
+# define the main menu function the program controller
+# use loop to choose then ask for user input
+# if user choose A load the questions then start quiz
+# if user choose print thank you then exit the loop
+# else print invalid
