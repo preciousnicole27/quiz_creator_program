@@ -22,6 +22,8 @@ def add_question():
         b = input("b.")
         c = input("c.")
         d = input("d.")
+
+        answer = input("Correct answer (a/b/c/d):").strip().lower()
 # ask user to input the correct answer for the given question
 # save the question given along with the answer
 # ask user if they want to add another question
