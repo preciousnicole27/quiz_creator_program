@@ -18,6 +18,10 @@ def add_question():
     while True:
         print(Fore.GREEN + "\n Adding the new question")
         question = input("Enter the question:")
+        a = input("a.")
+        b = input("b.")
+        c = input("c.")
+        d = input("d.")
 # ask user to input the correct answer for the given question
 # save the question given along with the answer
 # ask user if they want to add another question
