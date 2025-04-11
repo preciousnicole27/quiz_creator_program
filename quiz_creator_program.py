@@ -16,6 +16,7 @@ def check_file():
 def add_question():
 # use loop
     while True:
+# ask user to input the correct answer for the given question
         print(Fore.GREEN + "\n Adding the new question")
         question = input("Enter the question:")
         a = input("a.")
@@ -27,9 +28,15 @@ def add_question():
         if answer not in ('a','b','c','d'):
             print(Fore.RED + "Invalid answer")
             continue
-# ask user to input the correct answer for the given question
 # save the question given along with the answer
 # ask user if they want to add another question
+        with open (filename, 'a') as file:
+            file.write(f"Question:{question}\n")
+            file.write(f"A. {a}\n")
+            file.write(f"B. {b}\n")
+            file.write(f"C. {c}\n")
+            file.write(f"D. {d}\n")
+            file.write(f"Answer: {answer.upper()}\n\n")    
 # define the function that will read the questions in the existing text file
 def quiz_program(filename):
 # store 
