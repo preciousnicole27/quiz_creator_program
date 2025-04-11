@@ -80,6 +80,11 @@ def view_questions():
         print(Fore.GREEN + f"[{idx}] {q['questions'][9:]}")
 # define the function that will allow user to remove questions
 def remove_question():
+    questions = quiz_program(filename)
+    if not questions:
+        print(Fore.YELLOW + "No questions to remove")
+        return
+    view_questions()
 # write the updated list after
 # define the function that will allow user to take the quiz
 def start_quiz(questions, num_questions = 5):
