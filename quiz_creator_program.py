@@ -66,7 +66,9 @@ def quiz_program(filename):
             questions.append(current)
         else:
             continue
-# return 
+# return
+    print(f"Loading success {len(questions)} questions.")
+    return questions
 # define the function that will view the questions added 
 def view_questions():
 # print each question number and text
