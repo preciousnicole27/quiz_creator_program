@@ -15,6 +15,9 @@ def check_file():
 # define function that will let user add questions
 def add_question():
 # use loop
+    while True:
+        print(Fore.GREEN + "\n Adding the new question")
+        question = input("Enter the question:")
 # ask user to input the correct answer for the given question
 # save the question given along with the answer
 # ask user if they want to add another question
