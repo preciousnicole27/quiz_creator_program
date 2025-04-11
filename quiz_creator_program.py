@@ -123,6 +123,16 @@ def start_quiz(questions, num_questions = 5):
 
 # ask for user input (answers)
 # print score with percentage
+        user_answer = input("Your answer (A/B/C/D):").strip().upper()
+        if user_answer == q["answer"]:
+            print("Correct!!")
+            score += 1
+        else:
+            print(Fore.RED + f" Wrong. Correct answer is: {q['answer']}")
+            
+            print("\n You finished the quiz!") 
+            print(f"Score: {score}/{num_questions}")
+            print(f"Percentage: {(score/num_questions) * 100: .2f}%")
 # define the main menu function
 def main():
     filename = "quiz_questions.txt"
