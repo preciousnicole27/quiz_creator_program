@@ -9,6 +9,8 @@ init(autoreset=True)
 filename= "quiz_questions.txt"
 # define the function that will check files
 def check_file():
+    if not os.path.exists(filename):
+        with open(filename, 'w'): pass
 # check if quiz file exists
 # define function that will let user add questions
 def add_question():
@@ -33,5 +35,6 @@ def start_quiz(questions, num_questions = 5):
 # print score with percentage
 # define the main menu function
 def main():
+    filename = "quiz_questions.txt"
 # loop through four options
 # let user choose which they want to do
