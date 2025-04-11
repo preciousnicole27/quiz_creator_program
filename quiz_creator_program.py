@@ -144,3 +144,20 @@ def main():
         print("C. Take quiz")
         print("D. Exit")
 # let user choose which they want to do
+        choice = input("Please choose an option(A/B/C/D):").strip()
+
+        if choice == "A":
+            add_question()
+
+        elif choice == "B":
+            view_questions()
+        elif choice == "C":
+            questions = quiz_program(filename)  # load the questions
+        if quiz_program:
+            start_quiz(quiz_program)
+        elif choice == "D":
+            print(Fore.PINK + "Thank you!!")
+            break
+        else:
+            print(Fore.RED + "Invalid input. Please try again.")
+
