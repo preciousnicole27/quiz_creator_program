@@ -71,6 +71,11 @@ def quiz_program(filename):
     return questions
 # define the function that will view the questions added 
 def view_questions():
+    questions = quiz_program(filename)
+    if not questions:
+        print(Fore.BLUE + "No questions found.")
+        return
+
 # print each question number and text
 # define the function that will allow user to remove questions
 def remove_question():
