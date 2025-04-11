@@ -45,6 +45,9 @@ def quiz_program(filename):
     check_file()
     with open (filename, 'r') as file:
         lines = file.readlines()
+
+    questions = []
+    current = {}
 # store 
 # return 
 # define the function that will view the questions added 
