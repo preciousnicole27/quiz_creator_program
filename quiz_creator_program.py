@@ -107,11 +107,13 @@ def remove_question():
 
 # define the function that will allow user to take the quiz
 def start_quiz(questions, num_questions = 5):
-     questions= quiz_program(filename)
+    questions= quiz_program(filename)
     if not questions:
         print(Fore.YELLOW + "No questions available")
         return
 # shuffle/ randomize the questions
+    random.shuffle(questions)
+    score = 0
 # ask for user input (answers)
 # print score with percentage
 # define the main menu function
