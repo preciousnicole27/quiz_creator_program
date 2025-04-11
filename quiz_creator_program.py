@@ -137,4 +137,10 @@ def start_quiz(questions, num_questions = 5):
 def main():
     filename = "quiz_questions.txt"
 # loop through four options
+    while True:
+        print(Style.BRIGHT + "\n Welcome to Quiz Creator!")
+        print("A. Add question")
+        print("B. View questions")
+        print("C. Take quiz")
+        print("D. Exit")
 # let user choose which they want to do
