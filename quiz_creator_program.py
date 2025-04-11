@@ -24,6 +24,9 @@ def add_question():
         d = input("d.")
 
         answer = input("Correct answer (a/b/c/d):").strip().lower()
+        if answer not in ('a','b','c','d'):
+            print(Fore.RED + "Invalid answer")
+            continue
 # ask user to input the correct answer for the given question
 # save the question given along with the answer
 # ask user if they want to add another question
