@@ -1,5 +1,8 @@
 # Main program
 # import libraries
+import os
+import random
+from colorama import init, Fore, Style
 # initialize color formatting
 # set filename for storing questions along with the existing questions
 # define the function that will check files
@@ -21,5 +24,6 @@
 # ask for user input (answers)
 # print score with percentage
 # define the main menu function
+
 # loop through four options
 # let user choose which they want to do
