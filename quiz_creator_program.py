@@ -36,7 +36,10 @@ def add_question():
             file.write(f"B. {b}\n")
             file.write(f"C. {c}\n")
             file.write(f"D. {d}\n")
-            file.write(f"Answer: {answer.upper()}\n\n")    
+            file.write(f"Answer: {answer.upper()}\n\n")  
+        again = input("Add a new question? (yes/no):").strip().lower()
+        if again != 'yes':
+            break  
 # define the function that will read the questions in the existing text file
 def quiz_program(filename):
 # store 
