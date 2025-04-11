@@ -49,6 +49,23 @@ def quiz_program(filename):
     questions = []
     current = {}
 # store 
+    for line in lines:
+        line = line.strip()
+        if line.startswith("Question:"):
+            current = {"question":line}
+        elif line.startswith("A."):
+            current["A"] =  line
+        elif line.startswith("B."):
+            current["B"] = line
+        elif line.startswith("C."):
+            current["C"] = line
+        elif line.startswith("D."):
+            current["D"] = line
+        elif line.startswith("Answer:"):
+            current["answer"] = line.split(":")[1].strip().upper()
+            questions.append(current)
+        else:
+            continue
 # return 
 # define the function that will view the questions added 
 def view_questions():
