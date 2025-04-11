@@ -61,3 +61,29 @@ B. Java
 C. R
 D. Python
 Answer: D
+
+==HARD==
+
+Question: What element has the highest electronegativity based on the periodic table?
+
+A. Oxygen
+B. Mercury
+C. Fluorine
+D. Chlorine
+Answer: C
+
+Question: What is the primary source of oxygen produced during Photosynthesis?
+
+A. Water
+B. Sun
+C. Glucose
+D. ATP 
+Answer: A
+
+Question: Which function is used to check the type of variable in Python?
+
+A. def()
+B. type()
+C. title()
+D. check_type()
+Answer: B
