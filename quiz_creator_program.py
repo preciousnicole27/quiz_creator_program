@@ -4,6 +4,8 @@ import os
 import random
 from colorama import init, Fore, Style
 # initialize color formatting
+init(autoreset=True)
+filename= "quiz_questions.txt"
 # set filename for storing questions along with the existing questions
 # define the function that will check files
 # check if quiz file exists
