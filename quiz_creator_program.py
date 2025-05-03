@@ -141,8 +141,7 @@ def main():
         print(Style.BRIGHT + "\n Welcome to Quiz Creator!")
         print("A. Add question")
         print("B. View questions")
-        print("C. Take quiz")
-        print("D. Exit")
+        print("C. Exit")
 # let user choose which they want to do
         choice = input("Please choose an option(A/B/C/D):").strip()
 
@@ -152,10 +151,6 @@ def main():
         elif choice == "B":
             view_questions()
         elif choice == "C":
-            questions = quiz_program(filename)  # load the questions
-        if quiz_program:
-            start_quiz(quiz_program)
-        elif choice == "D":
             print(Fore.PINK + "Thank you!!")
             break
         else:
