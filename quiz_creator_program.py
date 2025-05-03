@@ -105,34 +105,6 @@ def remove_question():
     except ValueError:
         print(Fore.RED + "Invalid input. Please enter a number.")
 
-# define the function that will allow user to take the quiz
-def start_quiz(questions, num_questions = 5):
-    questions= quiz_program(filename)
-    if not questions:
-        print(Fore.YELLOW + "No questions available")
-        return
-# shuffle/ randomize the questions
-    random.shuffle(questions)
-    score = 0
-    for i, q in enumerate(questions[:num_questions], start = 1):
-        print(f"\n Question {i}: {q['question'][9:]}")
-        print(q["A"])
-        print(q["B"])
-        print(q["C"])
-        print(q["D"])
-
-# ask for user input (answers)
-# print score with percentage
-        user_answer = input("Your answer (A/B/C/D):").strip().upper()
-        if user_answer == q["answer"]:
-            print("Correct!!")
-            score += 1
-        else:
-            print(Fore.RED + f" Wrong. Correct answer is: {q['answer']}")
-            
-            print("\n You finished the quiz!") 
-            print(f"Score: {score}/{num_questions}")
-            print(f"Percentage: {(score/num_questions) * 100: .2f}%")
 # define the main menu function
 def main():
     filename = "quiz_questions.txt"
