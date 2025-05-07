@@ -86,4 +86,17 @@ A. def()
 B. type()
 C. title()
 D. check_type()
-Answer: B
+Answer: BQuestion:What's your name?
+A. Precious
+B. Nicole
+C. Zeus
+D. Jeonghan
+Answer: C
+
+Question:Whats your name?
+A. nicole
+B. precious
+C. zeus
+D. hello
+Answer: C
+
