@@ -6,6 +6,7 @@ from colorama import init, Fore, Style
 # init color format auto reset every print
 init(autoreset=True)
 # define file for quiz questions
+filename = "quiz_questions.txt"
 # define the function that will check if the quiz file exists
 # if not found return false
 # define the function that will load the questions
