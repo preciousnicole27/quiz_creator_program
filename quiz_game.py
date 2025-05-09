@@ -72,11 +72,23 @@ def quiz_user(questions):
 # define the function of the main menu
 def main():
 # use loop to show main menu 
+# print menu options
     while True:
         print(Style.BRIGHT + "\nWelcome to the Quiz Program!")
         print("A. Start Quiz")
         print("B. Exit")
         
         choice = input("Please choose an option (A/B):").strip().upper() 
-# print menu options
+        if choice == "A":
+            questions = load_questions()
+            if questions:
+                quiz_user(questions)
+        elif choice == "B":
+            print(Fore.MAGENTA + "Thank you.")
+            break
+        else:
+            print(Fore.RED + "Invalid input. Please try again.")
+
+
+
 # call main function to begin the program
