@@ -1,5 +1,8 @@
 # Quiz Game Program
 # import libraries
+import os
+import random
+from colorama import init, Fore, Style
 # init color format auto reset every print
 # define file for quiz questions
 # define the function that will check if the quiz file exists
