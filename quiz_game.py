@@ -8,6 +8,11 @@ init(autoreset=True)
 # define file for quiz questions
 filename = "quiz_questions.txt"
 # define the function that will check if the quiz file exists
+def check_file():
+    if not os.path.exists(filename):
+        print(Fore.RED + "Quiz file not found.")
+        return False
+    return True
 # if not found return false
 # define the function that will load the questions
     # if file doesnt exist return an empty list
