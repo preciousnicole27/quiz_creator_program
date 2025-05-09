@@ -49,6 +49,17 @@ def quiz_user(questions):
 
     score = 0
     total_questions = min(5, len(questions))
+    asked_questions = random.sample(questions, total_questions)
+
+    print(Style.BRIGHT + Fore.CYAN + "\n--- Quiz Time! ---")
+
+    for i, question in enumerate(asked_questions, 1):
+        print(f"\nQuestion {i}:")
+        print(Style.BRIGHT + Fore.GREEN + question['question'])
+        print(f"A. {question['A']}")
+        print(f"B. {question['B']}")
+        print(f"C. {question['C']}")
+        print(f"D. {question['D']}")
 # display score
 # define the function of the main menu
 # use loop to show main menu 
