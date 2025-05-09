@@ -4,6 +4,7 @@ import os
 import random
 from colorama import init, Fore, Style
 # init color format auto reset every print
+init(autoreset=True)
 # define file for quiz questions
 # define the function that will check if the quiz file exists
 # if not found return false
