@@ -42,6 +42,13 @@ def load_questions():
                 questions.append(current)
     return questions
 # define the funnction that will randomize questions
+def quiz_user(questions):
+    if not questions:
+        print(Fore.YELLOW + "No questions available to quiz.")
+        return
+
+    score = 0
+    total_questions = min(5, len(questions))
 # display score
 # define the function of the main menu
 # use loop to show main menu 
