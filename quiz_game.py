@@ -20,6 +20,27 @@ def load_questions():
     # if file doesnt exist return an empty list
         return []
 # return
+    with open(filename, 'r') as file:
+            lines = file.readlines()
+
+    questions = []
+    current = {}
+    for line in lines:
+            line = line.strip()
+            if line.startswith("Question:"):
+                current = {"question": line[9:].strip()}
+            elif line.startswith("A."):
+                current["A"] = line[2:].strip()
+            elif line.startswith("B."):
+                current["B"] = line[2:].strip()
+            elif line.startswith("C."):
+                current["C"] = line[2:].strip()
+            elif line.startswith("D."):
+                current["D"] = line[2:].strip()
+            elif line.startswith("Answer:"):
+                current["answer"] = line.split(":")[1].strip().upper()
+                questions.append(current)
+    return questions
 # define the funnction that will randomize questions
 # display score
 # define the function of the main menu
