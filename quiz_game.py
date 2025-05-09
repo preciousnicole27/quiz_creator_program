@@ -70,6 +70,7 @@ def quiz_user(questions):
 # display score
     print(Style.BRIGHT + Fore.BLUE + f"\nYou got {score} out of {total_questions} correct!")
 # define the function of the main menu
+def main():
 # use loop to show main menu 
 # print menu options
 # call main function to begin the program
