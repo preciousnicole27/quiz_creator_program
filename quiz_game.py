@@ -60,6 +60,15 @@ def quiz_user(questions):
         print(f"B. {question['B']}")
         print(f"C. {question['C']}")
         print(f"D. {question['D']}")
+        user_answer = input("Enter your answer (A/B/C/D): ").strip().upper()
+
+        if user_answer == question['answer']:
+            print(Fore.GREEN + "Correct! 🎉")
+            score += 1
+        else:
+            print(Fore.RED + f"Wrong! The correct answer was {question['answer']}.")
+
+
 # display score
 # define the function of the main menu
 # use loop to show main menu 
