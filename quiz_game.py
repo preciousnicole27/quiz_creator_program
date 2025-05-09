@@ -15,7 +15,10 @@ def check_file():
     return True
 # if not found return false
 # define the function that will load the questions
+def load_questions():
+    if not check_file():
     # if file doesnt exist return an empty list
+        return []
 # return
 # define the funnction that will randomize questions
 # display score
