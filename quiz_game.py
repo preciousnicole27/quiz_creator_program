@@ -51,7 +51,7 @@ def quiz_user(questions):
     total_questions = min(5, len(questions))
     asked_questions = random.sample(questions, total_questions)
 
-    print(Style.BRIGHT + Fore.CYAN + "\n--- Quiz Time! ---")
+    print(Style.BRIGHT + Fore.YELLOW + "\n ☆Quiz Time! ☆ ---")
 
     for i, question in enumerate(asked_questions, 1):
         print(f"\nQuestion {i}:")
@@ -63,7 +63,7 @@ def quiz_user(questions):
         user_answer = input("Enter your answer (A/B/C/D): ").strip().upper()
 
         if user_answer == question['answer']:
-            print(Fore.GREEN + "Correct! 🎉")
+            print(Fore.GREEN + "Correct! ⚡︎")
             score += 1
         else:
             print(Fore.RED + f"Wrong! The correct answer was {question['answer']}.")
@@ -74,7 +74,7 @@ def main():
 # use loop to show main menu 
 # print menu options
     while True:
-        print(Style.BRIGHT + "\nWelcome to the Quiz Program!")
+        print(Style.BRIGHT + "\n--⋆｡°✩ Welcome to the Quiz Program!𐙚---")
         print("A. Start Quiz")
         print("B. Exit")
         
@@ -84,11 +84,11 @@ def main():
             if questions:
                 quiz_user(questions)
         elif choice == "B":
-            print(Fore.MAGENTA + "Thank you.")
+            print(Fore.BLUE + "Thank you.")
             break
         else:
             print(Fore.RED + "Invalid input. Please try again.")
 
-
-
-# call main function to begin the program
+# call main function to begin the program\
+if __name__ == "__main__":
+    main()
