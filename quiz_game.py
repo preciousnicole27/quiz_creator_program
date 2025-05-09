@@ -67,9 +67,8 @@ def quiz_user(questions):
             score += 1
         else:
             print(Fore.RED + f"Wrong! The correct answer was {question['answer']}.")
-
-
 # display score
+    print(Style.BRIGHT + Fore.BLUE + f"\nYou got {score} out of {total_questions} correct!")
 # define the function of the main menu
 # use loop to show main menu 
 # print menu options
